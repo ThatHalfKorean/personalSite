@@ -142,68 +142,68 @@ const BlackJackLookUp = React.createClass({
         }
     },
     render(){
-    return(<div>
-        <div>
-            If you have a:
-            <select onChange={e => this.setState({ yourHand: e.target.value.split('-')[1],  typeOfHand: e.target.value.split('-')[0]})}>
-                <option value="" disabled>Hard</option>
-                <option value="Hard-5">5</option>
-                <option value="Hard-6">6</option>
-                <option value="Hard-7">7</option>
-                <option value="Hard-8">8</option>
-                <option value="Hard-9">9</option>
-                <option value="Hard-10">10</option>
-                <option value="Hard-11">11</option>
-                <option value="Hard-12">12</option>
-                <option value="Hard-13">13</option>
-                <option value="Hard-14">14</option>
-                <option value="Hard-15">15</option>
-                <option value="Hard-16">16</option>
-                <option value="Hard-17">17</option>
-                <option value="Hard-18">18</option>
-                <option value="Hard-19">19</option>
-                <option value="Hard-20">20</option>
-                <option value="Hard-21">21</option>
-                <option value="" disabled>Soft</option>
-                <option value="Soft-13">Soft 13</option>
-                <option value="Soft-14">Soft 14</option>
-                <option value="Soft-15">Soft 15</option>
-                <option value="Soft-16">Soft 16</option>
-                <option value="Soft-17">Soft 17</option>
-                <option value="Soft-18">Soft 18</option>
-                <option value="Soft-19">Soft 19</option>
-                <option value="Soft-20">Soft 20</option>
-                <option value="" disabled>Splits</option>
-                <option value="Pair-2">2,2</option>
-                <option value="Pair-3">3,3</option>
-                <option value="Pair-4">4,4</option>
-                <option value="Pair-6">6,6</option>
-                <option value="Pair-7">7,7</option>
-                <option value="Pair-8">8,8</option>
-                <option value="Pair-9">9,9</option>
-                <option value="Pair-11">A,A</option>
-            </select>
-        </div>
-        <div>
-            and the dealer is showing:
-                <select onChange={e => this.setState({ dealerHand: e.target.value })}>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-                <option value="11">A</option>
+        return(<div>
+            <div>
+                If you have a:
+                <select onChange={e => this.setState({ yourHand: e.target.value.split('-')[1],  typeOfHand: e.target.value.split('-')[0]})}>
+                    <option value="" disabled>Hard</option>
+                    <option value="Hard-5">5</option>
+                    <option value="Hard-6">6</option>
+                    <option value="Hard-7">7</option>
+                    <option value="Hard-8">8</option>
+                    <option value="Hard-9">9</option>
+                    <option value="Hard-10">10</option>
+                    <option value="Hard-11">11</option>
+                    <option value="Hard-12">12</option>
+                    <option value="Hard-13">13</option>
+                    <option value="Hard-14">14</option>
+                    <option value="Hard-15">15</option>
+                    <option value="Hard-16">16</option>
+                    <option value="Hard-17">17</option>
+                    <option value="Hard-18">18</option>
+                    <option value="Hard-19">19</option>
+                    <option value="Hard-20">20</option>
+                    <option value="Hard-21">21</option>
+                    <option value="" disabled>Soft</option>
+                    <option value="Soft-13">Soft 13</option>
+                    <option value="Soft-14">Soft 14</option>
+                    <option value="Soft-15">Soft 15</option>
+                    <option value="Soft-16">Soft 16</option>
+                    <option value="Soft-17">Soft 17</option>
+                    <option value="Soft-18">Soft 18</option>
+                    <option value="Soft-19">Soft 19</option>
+                    <option value="Soft-20">Soft 20</option>
+                    <option value="" disabled>Splits</option>
+                    <option value="Pair-2">2,2</option>
+                    <option value="Pair-3">3,3</option>
+                    <option value="Pair-4">4,4</option>
+                    <option value="Pair-6">6,6</option>
+                    <option value="Pair-7">7,7</option>
+                    <option value="Pair-8">8,8</option>
+                    <option value="Pair-9">9,9</option>
+                    <option value="Pair-11">A,A</option>
                 </select>
-        </div>
-        <div>
-            You Should: {dealerCompare[this.state.typeOfHand][this.state.yourHand][this.state.dealerHand]}
-        </div>
-    </div>)
-}
+            </div>
+            <div>
+                and the dealer is showing:
+                    <select onChange={e => this.setState({ dealerHand: e.target.value })}>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">A</option>
+                    </select>
+            </div>
+            <div>
+                You Should: {dealerCompare[this.state.typeOfHand][this.state.yourHand][this.state.dealerHand]}
+            </div>
+        </div>)
+    }
 
 })
 const App = React.createClass({
