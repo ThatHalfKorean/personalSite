@@ -1,0 +1,72 @@
+body {
+    font-family: 'helvetica';
+    width: 100%;
+    margin: 0;
+}
+
+button {
+    border-radius: .5em;
+    background: #eee;
+    padding: .5em .75em;
+    border: 1px solid #d5d5d5;
+}
+
+select {
+    border:2px solid #aaa;
+}
+#container {
+    text-align: center;
+}
+
+.blackjack-title {
+    display: block;
+    font-size: 2em;
+    padding: 10px 20px;
+}
+
+.quiz-content,
+.lookup-content {
+    display: inline-block;
+}
+
+.answer,
+.lookup-content,
+.quiz-prompt {
+    text-align: left;
+}
+
+.quiz-content {
+    padding: 0 20px;
+}
+
+.quiz-answer-buttons{
+    padding-top: 12px;
+}
+
+.lookup-your-hand,
+.lookup-dealer-hand {
+    padding-bottom: 12px;
+}
+
+.answer {
+    padding: 12px 0;
+}
+
+.revealed {
+    font-size: 1.25em;
+    font-weight: 700;
+}
+.quiz-answer-buttons button {
+    margin-right: 2em;
+}
+.tabs {
+    margin-bottom: 1em;
+    border-bottom: 1px solid #CCC;
+}
+.tab {
+    display: inline-block;
+    padding: .5em 1.5em;
+}
+.tab.active {
+    border-bottom: 3px solid #0C0;
+}
