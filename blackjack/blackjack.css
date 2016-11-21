@@ -1,14 +1,9 @@
-body {
-    font-family: 'helvetica';
-    width: 100%;
-    margin: 0;
-}
-
 button {
     border-radius: .5em;
     background: #eee;
     padding: .5em .75em;
     border: 1px solid #d5d5d5;
+    width: 64px;
 }
 
 select {
@@ -16,11 +11,12 @@ select {
 }
 #container {
     text-align: center;
+    width: 100%;
 }
 
 .blackjack-title {
     display: block;
-    font-size: 2em;
+    font-size: 3em;
     padding: 10px 20px;
 }
 
@@ -32,6 +28,7 @@ select {
 .answer,
 .lookup-content,
 .quiz-prompt {
+    font-size: 1.5em;
     text-align: left;
 }
 
@@ -41,6 +38,8 @@ select {
 
 .quiz-answer-buttons{
     padding-top: 12px;
+    display: flex;
+    justify-content: center;
 }
 
 .lookup-your-hand,
@@ -55,9 +54,10 @@ select {
 .revealed {
     font-size: 1.25em;
     font-weight: 700;
+    display: inline-block;
 }
 .quiz-answer-buttons button {
-    margin-right: 2em;
+    margin: 0 1em;
 }
 .tabs {
     margin-bottom: 1em;

@@ -10,7 +10,7 @@ const dealerCompare = {
         [-1,-1,  'Hit',  'Hit',  'Hit',  'Hit',  'Hit',  'Hit',  'Hit',  'Hit',   'Hit',   'Hit'],
         [-1,-1,  'Hit',  'Hit',  'Hit',  'Hit',  'Hit',  'Hit',  'Hit',  'Hit',   'Hit',   'Hit'],
         [-1,-1,  'Hit',  'Double',  'Double',  'Double',  'Double',  'Hit',  'Hit',  'Hit',   'Hit',   'Hit'],
-        [-1,-1,  'Double',  'Double',  'Double',  'Double',  'Double',  'Double',  'Double',  'Double',   'Hit',   'Hit'], 
+        [-1,-1,  'Double',  'Double',  'Double',  'Double',  'Double',  'Double',  'Double',  'Double',   'Hit',   'Hit'],
         [-1,-1,  'Double',  'Double',  'Double',  'Double',  'Double',  'Double',  'Double',  'Double',   'Double',   'Double'],
         [-1,-1,  'Hit',  'Hit',  'Stay',  'Stay',  'Stay',  'Hit',  'Hit',  'Hit',   'Hit',   'Hit'],
         [-1,-1,  'Stay',  'Stay',  'Stay',  'Stay',  'Stay',  'Hit',  'Hit',  'Hit',   'Hit',   'Hit'],
@@ -24,19 +24,19 @@ const dealerCompare = {
         [-1,-1,  'Stay',  'Stay',  'Stay',  'Stay',  'Stay',  'Stay',  'Stay',  'Stay',   'Stay',   'Stay']
     ],
     'Soft':[
-        [0],                      
-        [1],                     
-        [2],                     
-        [3],                     
-        [4],                     
-        [5],                     
-        [6],                     
-        [7],                     
-        [8],                     
-        [9],                     
-        [11],                      
-        [11],                      
-        [12],                      
+        [0],
+        [1],
+        [2],
+        [3],
+        [4],
+        [5],
+        [6],
+        [7],
+        [8],
+        [9],
+        [11],
+        [11],
+        [12],
         [-1,  -1,  'Hit', 'Hit', 'Hit', 'Double', 'Double', 'Hit', 'Hit', 'Hit', 'Hit', 'Hit'],
         [-1,  -1,  'Hit', 'Hit', 'Hit', 'Double', 'Double', 'Hit', 'Hit', 'Hit', 'Hit', 'Hit'],
         [-1,  -1,  'Hit', 'Hit', 'Double', 'Double', 'Double', 'Hit', 'Hit', 'Hit', 'Hit', 'Hit'],
@@ -48,8 +48,8 @@ const dealerCompare = {
         [-1,  -1,  'Stay', 'Stay', 'Stay', 'Stay', 'Stay', 'Stay', 'Stay', 'Stay', 'Stay', 'Stay']
     ],
     'Pair':[
-        [0],                     
-        [1],                    
+        [0],
+        [1],
         [-1,  -1,  'Split', 'Split', 'Split', 'Split', 'Split', 'Split', 'Hit', 'Hit', 'Hit', 'Hit'],
         [-1,  -1,  'Split', 'Split', 'Split', 'Split', 'Split', 'Split', 'Hit', 'Hit', 'Hit', 'Hit'],
         [-1,  -1,  'Hit', 'Hit', 'Hit', 'Split', 'Split', 'Hit', 'Hit', 'Hit', 'Hit', 'Hit'],
@@ -84,7 +84,7 @@ const situations = [
         'min':2,
         'max':11,
         'description': 'A Pair of ',
-        'table':'Pair'                  
+        'table':'Pair'
     }
 ];
 const BlackJackQuiz = React.createClass({
@@ -224,6 +224,7 @@ const App = React.createClass({
     render(){
         return (
             <div>
+                <div className="blackjack-title">Basic Blackjack Strategy</div>
                 <div className='tabs'>
                     <div className={this.state.activeIndex === 0 ? 'tab active':'tab'} onClick={()=> this.setState({activeIndex: 0})}>Quiz</div>
                     <div className={this.state.activeIndex === 1 ? 'tab active':'tab'} onClick={()=> this.setState({activeIndex: 1})}>Look Up</div>
